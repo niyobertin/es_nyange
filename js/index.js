@@ -12,3 +12,16 @@ function carousel() {
   home[myIndex-1].style.display = "block";  
   setTimeout(carousel, 4000); // Change image every 6 seconds
 }
+
+let menuList = document.getElementById("link");
+menuList.style.display="none";
+menuList.style.overflow ="hidden";
+menuList.style.transition = "0.5s";
+// menuList.style.marginTop ="-1none"
+function loadMenu(){
+  if(menuList.style.display =="none"){
+    menuList.style.display ="block";
+  }else{
+    menuList.style.display ="none";
+  }
+}

@@ -45,15 +45,31 @@ header{
 #logo{
     margin: 5px;
     width: 20%;
+    
 }
 #logo img{
 height: 10vh;
 width: 10vh;
 border-radius: 50%;
+display: flex;
+}
+#men img{
+    height: 7vh;
+width: 7vh;
+display: none;
+}
+#link img{
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%; 
+    display: none;
 }
 #link a{
     color: antiquewhite;
     margin-right:10px ;    
+}
+#link a:hover{
+   color: rgb(255, 0, 170); 
 }
 a{
 display: flex;
@@ -257,4 +273,32 @@ font-weight: bold;
     font-size: 22px;
     margin-left: 10em;
     margin-right: 10em;
+}
+
+@media screen and (max-width: 700px){
+    #link {
+        width: 100%;
+        background-color: aqua;
+        position: absolute;
+        top: 61px;
+        right: 0;
+        margin-right: 0;
+        z-index: 2;  
+        display: block; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    #link {
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    /* #link a{
+        margin-left: 20px;
+      
+   
+    } */
+    #men img{
+        display: block;
+    }
 }
