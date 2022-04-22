@@ -13,15 +13,13 @@ function carousel() {
   setTimeout(carousel, 4000); // Change image every 6 seconds
 }
 
-let menuList = document.getElementById("link");
-menuList.style.display="none";
-menuList.style.overflow ="hidden";
-menuList.style.transition = "0.5s";
-// menuList.style.marginTop ="-1none"
+let menuList = document.getElementById("menuList");
+menuList.style.maxHeight="0px";
+
 function loadMenu(){
-  if(menuList.style.display =="none"){
-    menuList.style.display ="block";
+  if(menuList.style.maxHeight =="0px"){
+    menuList.style.maxHeight ="170px";
   }else{
-    menuList.style.display ="none";
+    menuList.style.maxHeight ="0px";
   }
 }
