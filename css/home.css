@@ -58,6 +58,11 @@ display: flex;
 #link a:hover{
    color: rgb(255, 0, 170); 
 }
+#mission ol li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #mission ol li img{
     height: 4vh;
     width: 4vh;
@@ -219,10 +224,18 @@ font-weight: bold;
     padding-right: 6vh;
     font-family: 'Courier New', Courier, monospace;
 }
+#contact ol li{
+    display: flex;
+    align-items: center;
+}
 #contact ol li img{
     height: 4vh;
     width: 4vh;
     border-radius: 50px;
+}
+#soscial-media ol li{
+    display: flex;
+    align-items: center;
 }
 #soscial-media ol li img{
     height: 4vh;
@@ -232,6 +245,8 @@ font-weight: bold;
 ol li{
     margin: 5px;
     display:block;
+    font-size: 18px;
+    font-weight: 800;
 }
 #link-down a{
     color: aliceblue;
@@ -421,6 +436,7 @@ text-decoration:none;
     #dounpart{
         display: block;
         height: auto;
+        align-items: center;
     }
     #doun{
         display: none;
