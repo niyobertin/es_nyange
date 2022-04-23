@@ -295,12 +295,12 @@ text-decoration:none;
     color: aliceblue;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     #menuList{
         width: 100%;
         background-color: rgb(38, 115, 222);
         position: absolute;
-        top: 30px;
+        top: 29px;
         right: 0;
         margin-right: 0;
         z-index: 2;  
@@ -362,7 +362,7 @@ text-decoration:none;
         }
         #principal{
             /* background-color: blueviolet; */
-            height: 60vh;
+            height: auto;
             display: block;
            align-items: center;
             text-align: center; 
