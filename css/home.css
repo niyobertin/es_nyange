@@ -58,6 +58,10 @@ display: flex;
 #link a:hover{
    color: rgb(255, 0, 170); 
 }
+#mission ol li img{
+    height: 4vh;
+    width: 4vh;
+}
 ul{
     display: flex;
     justify-content: space-between;
@@ -137,7 +141,7 @@ font-weight: bold;
 
 #principal{
     /* background-color: blueviolet; */
-    height: 60vh;
+    height: auto;
     display: flex;
     flex: auto;
     justify-content: center;
@@ -159,16 +163,16 @@ font-weight: bold;
     border-radius: 50%;
 }
 #conteiner{
-    padding: 5px;
+    /* padding: 5px; */
     display:flex ;
-    flex: auto;
+    flex: 1;
 }
 #news{
     /* background-color: brown; */
-    height: 90vh;
-     width: 50%; 
-     text-align: center;
-     justify-content: center;
+    height: auto;
+    width: 50%; 
+    text-align: center;
+    justify-content: center;
 }
 #day-news{
     /* un completed */
@@ -192,17 +196,11 @@ font-weight: bold;
 } 
 #enovation{
     /* background-color: chartreuse; */
-    height: 60vh;
-     width: 20%; 
+    height: auto;
+    width: 20%; 
 }
 #enovation{
-    /* display: flex; */
-    flex: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    /* align-items: center;
-    text-align: center; */
-    height: 90vh;
+    height: auto;
     width: 50%; 
     text-align: center;
     justify-content: center;
@@ -211,7 +209,7 @@ font-weight: bold;
     width: 80%;
     height: 20em;
 }
-#footer{
+#dounpart{
     background-color: rgb(53, 80, 85);
     display: flex;
     justify-content: space-between;
@@ -221,8 +219,26 @@ font-weight: bold;
     padding-right: 6vh;
     font-family: 'Courier New', Courier, monospace;
 }
+#contact ol li img{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50px;
+}
+#soscial-media ol li img{
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50px;
+}
+ol li{
+    margin: 5px;
+    display:block;
+}
 #link-down a{
     color: aliceblue;
+    text-decoration: none; 
+}
+#link-down a:hover{
+    color: rgb(255, 0, 170);
 }
 #doun{
     background-color: rgb(53, 80, 85);
@@ -231,6 +247,7 @@ font-weight: bold;
     justify-content: space-between;
     align-items: center;
     color: aliceblue;
+    
 }
 #doun,#copy,#link-down{
     display: flex;
@@ -258,6 +275,11 @@ font-weight: bold;
     margin-left: 10em;
     margin-right: 10em;
 }
+#teachers img{
+    height: 15vh;
+    width: 15vh;
+    border-radius: 25%;
+}
 #footer ul{
 /* background-color: aqua; */
 display: block;
@@ -265,13 +287,20 @@ margin: 10px;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 text-decoration:none;
 }
+#copy1{
+    display: none;
+}
+#copy{
+    background-color:  rgb(53, 80, 85);
+    color: aliceblue;
+}
 
 @media screen and (max-width: 700px){
     #menuList{
         width: 100%;
         background-color: rgb(38, 115, 222);
         position: absolute;
-        top: 31px;
+        top: 30px;
         right: 0;
         margin-right: 0;
         z-index: 2;  
@@ -353,4 +382,74 @@ text-decoration:none;
             width: 20vh;
            border-radius: 50%;
        }
+       #conteiner{
+
+           display: block;
+            /* padding-top: 10px; */
+       }
+       #news{
+           width: 100%;
+           align-items: center;
+       }
+       #news img{
+        width: 100%;
+        height: 13em;
+        /* margin: 0px 0px; */
+    }
+
+    #day-news{
+    /* padding: 5px; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    margin-left: 1em;
+    margin-right: 1em;
+    } 
+    #enovation{
+        width: 100%; 
+        align-items: center;
+        text-align: center;
+    }
+    #our-inovation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #our-inovation img{
+            width: 100%;
+            height: 13em;
+    }
+    #dounpart{
+        display: block;
+        height: auto;
+    }
+    #doun{
+        display: none;
+    }
+    #copy1{
+        background-color:  rgb(53, 80, 85); ;
+        color: aliceblue;
+        display: flex;
+        justify-content: end;
+    }
+
+    #details{
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: small;
+    }
+    #details ul{
+        display: block;
+    }
+    #diedhearos{
+        display: block;
+        text-align: center;
+        justify-content: space-between;
+        margin: 2em;
+    }
+    #im img{
+        height: 60vh;
+        width:100%;
+    }
 }
