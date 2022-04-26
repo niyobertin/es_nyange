@@ -15,7 +15,6 @@ function carousel() {
 
 let menuList = document.getElementById("menuList");
 menuList.style.maxHeight="0px";
-
 function loadMenu(){
   if(menuList.style.maxHeight =="0px"){
     menuList.style.maxHeight ="230px";
